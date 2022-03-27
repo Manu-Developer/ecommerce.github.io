@@ -120,7 +120,7 @@ a {
 	background-repeat: no-repeat;
 }
 .header__main-left-content__text {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 300;
 	text-align: justify;
 	margin-bottom: 2rem;
@@ -163,9 +163,6 @@ a {
 	.header__main-left-content__title {
 		font-size: 3rem;
 		margin-bottom: 1rem;
-	}
-	.header__main-left-content__text {
-		font-size: 1.6rem;
 	}
 }
 /*Finish of Header Styles*/
