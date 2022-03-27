@@ -30,7 +30,6 @@ span {
 }
 i {
 	font-size: 2rem;
-	padding-left: 1rem;
 	cursor: pointer;
 }
 p {
@@ -45,7 +44,7 @@ a {
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 0 4rem 0 4rem;
+	padding: 0 4rem;
 	max-width: 145rem;
 }
 .navigation-bar {
@@ -87,11 +86,16 @@ a {
 	width: 100%;
 	font-size: 1.3rem;
 }
+.fa-search,
+.fa-user,
+.fa-shopping-cart {
+	margin-left: 1rem;
+}
 ::placeholder {
 	color: var(--dark-blue);
 }
 @media screen and (max-width: 768px) {
-	.navigation-bar{
+	.navigation-bar {
 		display: flex;
 		flex-direction: column;
 	}
@@ -119,13 +123,13 @@ a {
 	font-size: 1.8rem;
 	font-weight: 300;
 	text-align: justify;
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 	max-width: 800px;
 }
 .cta-button {
 	border: none;
 	background-color: var(--orange);
-	width: 170px;
+	width: 200px;
 	height: 40px;
 	border-radius: 20px;
 	font-size: 1.5rem;
@@ -149,16 +153,16 @@ a {
 	}
 	.header__main-left-content__title {
 		font-size: 4rem;
-		padding-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 @media screen and (max-width: 768px) {
 	.grid-container {
-		padding: 4rem 0rem 4rem 0rem;
+		padding: 4rem 0rem;
 	}
 	.header__main-left-content__title {
 		font-size: 3rem;
-		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
 	.header__main-left-content__text {
 		font-size: 1.6rem;
@@ -187,6 +191,7 @@ a {
 	grid-auto-rows: 370px;
 	gap: 2.5rem;
 	row-gap: 3.5rem;
+	margin-bottom: 5rem;
 }
 .products__grid .products__grid-cards {
 	height: 100%;
@@ -225,7 +230,7 @@ a {
 .product__flex-card__name {
 	font-size: 2rem;
 	font-weight: 700;
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 1rem 2rem;
 }
 .product__flex-card__price {
 	display: flex;
@@ -246,7 +251,7 @@ a {
 }
 .cta-comprar,
 .cta-carrito {
-	width: 50%;
+	width: 130px;
 	height: 35px;
 	display: flex;
 	align-items: center;
@@ -279,13 +284,12 @@ a {
 .product__flex-card__flex-buttons {
 	display: flex;
 	gap: 1rem;
-	padding: 1rem 2rem 1rem 2rem;
+	padding: 1rem 2rem;
 }
 /*Finish of Products*/
 
 /*Categories*/
 .category-title {
-	margin-top: 5rem;
 	font-size: 3rem;
 }
 .category-title::after {
@@ -395,11 +399,11 @@ a {
 
 /*New Product*/
 .new-product {
-	margin: 5rem 0rem 5rem 0rem;
+	margin: 5rem 0rem;
 	width: 100%;
 	height: auto;
 	background-color: #8db2c5;
-	padding: 2rem 0rem 2rem 0rem;
+	padding: 2rem 0rem;
 }
 .new-product__grid {
 	display: flex;
@@ -418,18 +422,18 @@ a {
 .new-product__grid-text-1 {
 	font-size: 3.5rem;
 	color: var(--white);
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 	font-weight: 700;
 }
 .new-product__grid-text-2 {
 	font-size: 1.6rem;
 	color: var(--white);
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 @media screen and (max-width: 800px) {
 	.new-product {
 		height: auto;
-		padding: 2rem 0rem 2rem 0rem;
+		padding: 2rem 0rem;
 	}
 	.new-product__grid-img {
 		display: none;
@@ -446,12 +450,13 @@ a {
 /*Contact Form*/
 .contact-form {
 	background-color: var(--dark-blue);
+	padding-bottom: 2rem;
 }
 .contact-form__title {
 	display: block;
 	text-align: center;
 	font-size: 3rem;
-	padding: 4rem 0rem 4rem 0rem;
+	padding: 4rem 0rem;
 	color: var(--orange);
 	font-weight: 700;
 }
@@ -464,8 +469,8 @@ a {
 	border-radius: 20px;
 	color: white;
 	margin-bottom: 2rem;
-	height: 35px;
-	padding: 0 1rem 0 1rem;
+	height: 40px;
+	padding: 0 1rem;
 	font-size: 1.4rem;
 	font-weight: 300;
 	font-family: "Poppins", sans-serif;
@@ -494,11 +499,10 @@ a {
 	display: flex;
 	gap: 2rem;
 }
-
 .contact-form__grid-right-side-block {
 	display: flex;
 	align-items: center;
-	padding-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 .contact-form__grid-right-side-block i {
 	color: var(--white);
@@ -507,7 +511,7 @@ a {
 .contact-form__grid-right-side-block p {
 	color: var(--white);
 	font-size: 1.6rem;
-	padding-left: 2rem;
+	margin-left: 2rem;
 }
 #contact-form__grid-right-side-map {
 	width: 100%;
@@ -523,12 +527,14 @@ a {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 3rem;
-		height: 680px;
 	}
 }
 @media screen and (max-width: 768px) {
 	.contact-form__grid-right-side {
 		margin-top: 3rem;
+	}
+	.contact-form__grid-left-side .cta-button {
+		width: 100%;
 	}
 }
 /*Contact Form*/
