@@ -84,7 +84,7 @@ a {
 	color: var(--dark-blue);
 	height: 100%;
 	width: 100%;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 .fa-search,
 .fa-user,
@@ -169,18 +169,16 @@ a {
 
 /*Products*/
 .products {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin: 3rem 0;
 }
-.products h1 {
+.products {
 	font-size: 3rem;
 }
-.products h1::after {
+.products::after {
 	content: "";
 	display: block;
 	border-bottom: 1px solid var(--grey);
 	width: 100%;
-	margin-bottom: 1em;
 }
 .products__grid {
 	display: grid;
@@ -188,7 +186,6 @@ a {
 	grid-auto-rows: 370px;
 	gap: 2.5rem;
 	row-gap: 3.5rem;
-	margin-bottom: 5rem;
 }
 .products__grid .products__grid-cards {
 	height: 100%;
@@ -233,7 +230,6 @@ a {
 	display: flex;
 	padding-left: 2rem;
 	gap: 1rem;
-	align-items: flex-end;
 	font-weight: 500;
 }
 .product__flex-card__price .new-price {
@@ -288,13 +284,13 @@ a {
 /*Categories*/
 .category-title {
 	font-size: 3rem;
+	margin: 3rem 0;
 }
 .category-title::after {
 	content: "";
 	display: block;
 	border-bottom: 1px solid var(--grey);
 	width: 100%;
-	margin-bottom: 1em;
 }
 .category-grid__item {
 	position: relative;
@@ -379,7 +375,7 @@ a {
 	.category-grid {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: 1fr;
 		grid-auto-rows: 300px;
 		gap: 2rem;
 	}
@@ -453,7 +449,7 @@ a {
 	display: block;
 	text-align: center;
 	font-size: 3rem;
-	padding: 4rem 0rem;
+	padding: 3rem 0rem;
 	color: var(--orange);
 	font-weight: 700;
 }
@@ -462,7 +458,6 @@ a {
 .email,
 .message {
 	background-color: var(--light-blue);
-	border: none;
 	border-radius: 20px;
 	color: white;
 	margin-bottom: 2rem;
